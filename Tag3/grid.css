@@ -1,0 +1,58 @@
+/*
+
+display: [grid]                          | set element to grid layout
+
+grid-template-rows: [100px 100px 100px]  | specify amount of grid rows (px, %, em, fr, ...)
+grid-template-column: [1fr 1fr 1fr]      | specify amount of grid columns (px, %, em, fr, ...)
+grid-template: [1fr 1fr / 1fr 1fr]       | shorthand form of grid-template-rows and grid-template-column
+
+grid-row-start: [1]                      | specify starting row of grid element 
+grid-column-start: [1]                   | specify starting column of grid element
+grid-row-end: [2]                        | specify end row of grid element, exclusive
+grid-column-end: [2]                     | specify end column of grid element, exclusive
+grid-area: [1 / 1 / 3 / 3]               | shorthand form for grid element positioning
+
+gap: [15px]                              | specify gap between grid elements
+
+*/
+
+.grid{
+    width: 800px;
+    height: 800px;
+    border: thin solid red;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 200px);
+    /* gap: 50px; */
+}
+
+.item{
+
+    background-color: blue;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+
+.item2{
+    background-color: blueviolet;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+ 
+}
+
+.item3{
+    background-color:aqua;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.item4{
+    background-color:rgb(202, 58, 190);
+    grid-row-start: 4;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}

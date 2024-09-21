@@ -1,0 +1,35 @@
+/*-----Tags----*/
+body{
+    
+}
+
+h1{ 
+    color: rgb(75, 118, 114);
+
+}
+
+p{
+    color: rgb(210, 192, 205);
+
+}
+
+/*-----ID----*/
+#poetry{
+
+}
+
+/*-----Klassen----*/
+.first{
+    color:rgb(144, 23, 23);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+
+}
+.second{
+    font-size: 30px;
+    color:blueviolet;
+
+}
+.third{
+
+}

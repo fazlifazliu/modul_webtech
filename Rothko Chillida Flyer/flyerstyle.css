@@ -1,0 +1,111 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+    /*-----default desktop styles-----*/
+    body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        background-color: #693c37;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .rahmen {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .titel-item {
+        font-size: clamp(50px, 15vw, 25vw);
+        color: #382924;
+        margin: 0;
+        text-align: center;
+        transition: letter-spacing 0.5s ease;
+        letter-spacing: clamp(2px, 5vw, 10vw);
+    }
+
+    .rothko {
+        transform: translate(0, 5vh);
+        z-index: 0;
+        font-weight: 900;
+    }
+
+    .chillida {
+        transform: translate(0, -5vh);
+        z-index: 0;
+        font-weight: 900;
+    }
+
+    .red-box {
+        background-color: #BC312E;
+        color: #382924;
+        padding: 20px;
+        width: calc(100% - 20vw);
+        margin-left: 10vw;
+        margin-right: 10vw;
+        height: 80vh;
+        box-sizing: border-box;
+        text-align: left;
+        z-index: 2;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .informationen {
+        color: #382924;
+        font-size: clamp(16px, 2vw, 4vw);
+        line-height: 1.5;
+        text-align: right;
+    }
+
+    p {
+        margin: 0;
+    }
+
+
+    /*---media queries---*/
+@media (max-width: 834px) {
+    .rahmen {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .red-box {
+        width: 100vw;
+        height: 70vw;
+        margin-left: -2vw;
+        margin-right: -2vw;
+    }
+
+    .informationen {
+        line-height: 2.0;
+        transition: line-height 0.5s ease;
+    }
+     
+    .titel-item {
+        writing-mode: vertical-lr;
+        font-size: clamp(100px, 15vh, 25vw);
+    }
+
+    .rothko {
+        transform: rotate(180deg) translate(-2vw, 0vw);
+        display: flex;
+        align-items: center;
+    }
+
+    .chillida {
+        transform: rotate(180deg) translate(2vw, 0vh);
+        display: flex;
+        align-items: center;
+    }
+
+}

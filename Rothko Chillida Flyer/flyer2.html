@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyer2</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900&family=Roboto:wght@400;900&display=swap');
+
+    body {
+        margin: 0;
+        background-color: #693c37;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .rahmen {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .titel-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    .titel-item {
+        font-size: clamp(50px, 15vw, 25vw);
+        color: #382924;
+        margin: 0;
+        text-align: center;
+        padding: 10vh 20px;
+        transition: letter-spacing 0.1s ease-in-out;
+        letter-spacing: clamp(2px, 5vw, 10vw);
+    }
+
+    .red-box {
+        background-color: #BC312E;
+        color: #382924;
+        padding: 20px;
+        width: 80%;
+        height:auto;
+        box-sizing: border-box;
+        text-align: left;
+        z-index: 2;
+        position: absolute;
+    }
+
+
+    .informationen {
+        color: #382924;
+        font-size: clamp(16px, 2vw, 4vw);
+        line-height: 1.5;
+    }
+
+    p {
+        margin: 0;
+    }
+</style>
+
+<body>
+
+    <div class="rahmen">
+        <div class="titel-container">
+            <div class="titel-item">Rothko</div>
+            <div class="red-box">
+                <p class="informationen"><strong>3. III - 8. IV<br>Kunsthalle<br>Basel<br>Mark<br> Rothko<br>Eduardo
+                        <br>Chillida</strong></p>
+            </div>
+            <div class="titel-item">Chillida</div>
+        </div>
+
+
+</body>
+
+</html>
