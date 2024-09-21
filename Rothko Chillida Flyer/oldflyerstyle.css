@@ -9,15 +9,14 @@ body {
     background-color: #693C37;
     /* Dunkelbrauner Hintergrund */
     flex-direction: column;
-
-
 }
 
 .red-box {
-    background-color: #BC312E;
+    background-color: #3e6040;
     font-size: 2vw;
     color: #382924;
     width: 100%;
+
     height: 100%;
     padding: 2vw;
     justify-content: flex-start;
