@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uebung-transform</title>
+</head>
+<style>
+    .group {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /* beide elemente liegen ursprünglich übereinander */
+    .not_transformed,
+    .transformed {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        height: 400px;
+        width: 400px;
+
+        transform-origin: 50px 550px; 
+        transform:scale(0.5); 
+        transform:scale(0.8); 
+
+
+
+    }
+
+    /* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+
+    .not_transformed {
+        color: red;
+        font-size: 10vw;
+        transform-style: flat;
+    }
+
+    .not_transformed {
+        background-color: black;
+        transform: translate(20px, 100px);
+    }
+
+    .transformed {
+        background-color: rgba(0, 0, 255, 0.5);
+        font-size: 5vw;
+        font-size-adjust: none;
+        color: rgb(255, 136, 0);
+        transform: scale(0.8) rotate(90deg);
+    }
+
+    .transformed_verschoben {
+        background-color: brown;
+        transform: rotate(180deg);
+    }
+</style>
+
+<body>
+    <section>
+        <h1>Name der Transformation</h1>
+        <div class="group">
+            <div class="not_transformed"> </div>
+            <div class="transformed">
+                <p><strong> TEST </strong> </p>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
